@@ -24,4 +24,5 @@ for u in urls:
     except Exception as e:
         r["err"] = repr(e)
     out.append(r)
+os.makedirs("probe", exist_ok=True)
 json.dump(out, open("probe/out.json", "w"), indent=1)

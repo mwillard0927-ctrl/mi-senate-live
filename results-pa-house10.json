@@ -1,0 +1,47 @@
+{
+ "checked": "2026-11-04T04:23:42.467339+00:00",
+ "source": "NBC News",
+ "sourceUpdated": "11:23 PM ET",
+ "title": null,
+ "percentIn": "99%",
+ "candidates": [
+  {
+   "name": "Janelle Stelson",
+   "last": "Stelson",
+   "party": "dem",
+   "votes": 173741,
+   "pct": 55,
+   "winner": true,
+   "call": "P"
+  },
+  {
+   "name": "Scott Perry",
+   "last": "Perry",
+   "party": "gop",
+   "votes": 142023,
+   "pct": 45,
+   "winner": false,
+   "call": ""
+  }
+ ],
+ "modes": [
+  {
+   "mode": "Election Day",
+   "votes": 244133,
+   "c": {
+    "Stelson": 50,
+    "Perry": 50
+   }
+  },
+  {
+   "mode": "Early by Mail",
+   "votes": 71631,
+   "c": {
+    "Stelson": 74,
+    "Perry": 26
+   }
+  }
+ ],
+ "countiesReporting": 3,
+ "counties": 3
+}

@@ -1,0 +1,47 @@
+{
+ "checked": "2026-11-04T04:23:42.467339+00:00",
+ "source": "NBC News",
+ "sourceUpdated": "11:23 PM ET",
+ "title": null,
+ "percentIn": "94.7%",
+ "candidates": [
+  {
+   "name": "Paige Cognetti",
+   "last": "Cognetti",
+   "party": "dem",
+   "votes": 147837,
+   "pct": 55,
+   "winner": true,
+   "call": "P"
+  },
+  {
+   "name": "Rob Bresnahan Jr.",
+   "last": "Bresnahan",
+   "party": "gop",
+   "votes": 120739,
+   "pct": 45,
+   "winner": false,
+   "call": ""
+  }
+ ],
+ "modes": [
+  {
+   "mode": "Election Day",
+   "votes": 194132,
+   "c": {
+    "Bresnahan": 52,
+    "Cognetti": 48
+   }
+  },
+  {
+   "mode": "Early by Mail",
+   "votes": 74444,
+   "c": {
+    "Cognetti": 72,
+    "Bresnahan": 28
+   }
+  }
+ ],
+ "countiesReporting": 5,
+ "counties": 5
+}

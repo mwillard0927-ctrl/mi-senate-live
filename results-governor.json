@@ -1,7 +1,7 @@
 {
- "checked": "2026-11-04T07:26:05.551692+00:00",
+ "checked": "2026-11-04T07:27:13.010068+00:00",
  "source": "NBC News",
- "sourceUpdated": "2:25 AM ET",
+ "sourceUpdated": "2:26 AM ET",
  "title": null,
  "percentIn": "84.5%",
  "candidates": [
@@ -54,10 +54,10 @@
  "modes": [
   {
    "mode": "Election Day",
-   "votes": 1456602,
+   "votes": 1457206,
    "c": {
     "James": 53,
-    "Benson": 44,
+    "Benson": 45,
     "Hudson": 1,
     "Brandenburg": 0,
     "Campbell": 0
@@ -65,7 +65,7 @@
   },
   {
    "mode": "Early by Mail",
-   "votes": 1010093,
+   "votes": 1010646,
    "c": {
     "Benson": 65,
     "James": 34,
@@ -76,7 +76,7 @@
   },
   {
    "mode": "Early In Person",
-   "votes": 473429,
+   "votes": 473674,
    "c": {
     "Benson": 55,
     "James": 44,

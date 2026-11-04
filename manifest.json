@@ -1,6 +1,6 @@
 {
  "id": "/mi-senate-live/app2",
- "name": "Michigan Election Live",
+ "name": "Election Night Live",
  "short_name": "MI Senate",
  "start_url": "/mi-senate-live/?app=2",
  "scope": "/mi-senate-live/",

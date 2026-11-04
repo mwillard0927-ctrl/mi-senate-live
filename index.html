@@ -41,29 +41,37 @@ h2{margin:0;font-size:22px}
 .lead{font-size:11px;font-weight:700;margin-top:3px}
 .axis{display:grid;grid-template-columns:52px 1fr 1fr 64px;gap:6px;font-size:11px;color:var(--mut);margin-bottom:4px}
 .axis span:nth-child(2){text-align:right}.axis span:nth-child(3){text-align:left}.axis span:last-child{text-align:right}
+.sw{display:inline-flex;background:var(--soft);border-radius:99px;padding:4px;margin:6px 0 4px}.sw button{font:inherit;font-size:14px;font-weight:700;border:0;background:transparent;color:var(--mut);padding:10px 18px;border-radius:99px;min-height:44px;cursor:pointer}.sw button[aria-selected=true]{background:var(--tx);color:var(--bg)}
 .sep{width:60%;height:1px;background:var(--track);margin-top:26px}
 .flash{animation:fl 1.5s}@keyframes fl{0%{filter:brightness(1.35)}100%{filter:none}}
 </style></head><body>
 <div class="w">
  <div class="top">
   <span class="live">● LIVE</span>
-  <h1>Michigan Election Night</h1>
+  <div class="sw" role="tablist"><button data-s="MI">Michigan</button><button data-s="PA">Pennsylvania</button></div>
+  <h1 id="h1">Michigan Election Night</h1>
   <div class="mut" id="upd">Loading…</div>
  </div>
  <div id="races"></div>
  <div class="mut" style="margin:26px 0;font-size:11px">Results via NBC News · updates automatically</div>
 </div>
 <script>
-const RACES=[
- {key:'senate',title:'US Senate'},
- {key:'governor',title:'Governor'},
- {key:'house10',title:'US House · District 10'}
-];
+const STATES={
+ MI:{name:'Michigan',races:[{key:'senate',title:'US Senate'},{key:'governor',title:'Governor'},{key:'house10',title:'US House · District 10'}]},
+ PA:{name:'Pennsylvania',races:[{key:'pa-governor',title:'Governor'}]}
+};
+let ST=(location.hash.slice(1).toUpperCase() in STATES)?location.hash.slice(1).toUpperCase():(()=>{try{return localStorage.getItem('st')||'MI'}catch(e){return 'MI'}})();
+if(!STATES[ST])ST='MI';
+let RACES=[];
 const fmt=n=>Number(n||0).toLocaleString();
 const p1=n=>Number(n||0).toFixed(1)+'%';
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 async function getJSON(f){return (await fetch(f+'?t='+Date.now(),{cache:'no-store'})).json()}
 const box=document.getElementById('races');
+function build(){
+box.innerHTML='';RACES=STATES[ST].races.map(r=>({...r}));
+document.getElementById('h1').textContent=STATES[ST].name+' Election Night';
+document.querySelectorAll('.sw button').forEach(b=>b.setAttribute('aria-selected',b.dataset.s===ST));
 RACES.forEach((r,i)=>{
  const el=document.createElement('section');el.className='race';el.id='r-'+r.key;
  el.innerHTML=(i?'<div class="sep" style="margin:0 0 26px"></div>':'')+
@@ -74,6 +82,9 @@ RACES.forEach((r,i)=>{
  '<div class="trend"><div class="lbl ttl">LEAD TONIGHT (VOTES)</div><div class="rows mut">Collecting…</div></div>';
  box.appendChild(el);r.el=el;r.lastKey='';
 });
+}
+build();
+document.querySelectorAll('.sw button').forEach(b=>b.onclick=()=>{ST=b.dataset.s;try{localStorage.setItem('st',ST)}catch(e){}history.replaceState(null,'','#'+ST.toLowerCase());build();tick()});
 function fill(el,c,lead,color){
  el.querySelector('.n').textContent=c.last;
  el.querySelector('.pct').textContent=p1(c.pct);
@@ -94,7 +105,7 @@ function renderTrend(r,hist,dName,rName){
  const kf=v=>{const a=Math.abs(v);return (v<0?'-':'')+(a>=1000?(a/1000).toFixed(a>=10000?0:1)+'k':a)};
  const line=pts.map((p,i)=>(i?'L':'M')+X(p.x).toFixed(1)+','+Y(p.y).toFixed(1)).join('');
  const area=line+'L'+X(pts[pts.length-1].x).toFixed(1)+','+y0+'L'+X(pts[0].x).toFixed(1)+','+y0+'Z';
- const id='c'+r.key;
+ const id='c'+r.key.replace(/[^a-z0-9]/gi,'');
  let g='';
  for(let i=0;i<=4;i++){const v=lo+(hi-lo)*i/4,yy=Y(v);g+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+yy+'" y2="'+yy+'" stroke="var(--track)"/><text x="'+(L-6)+'" y="'+(yy+4)+'" text-anchor="end" font-size="10" fill="var(--mut)">'+kf(Math.round(v))+'</text>'}
  const step=30*60000;let tx='';

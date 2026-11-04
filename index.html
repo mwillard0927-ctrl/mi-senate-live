@@ -58,7 +58,7 @@ h2{margin:0;font-size:22px}
 <script>
 const STATES={
  MI:{name:'Michigan',races:[{key:'senate',title:'US Senate'},{key:'governor',title:'Governor'},{key:'house10',title:'US House · District 10'}]},
- PA:{name:'Pennsylvania',races:[{key:'pa-governor',title:'Governor'}]}
+ PA:{name:'Pennsylvania',races:[{key:'pa-governor',title:'Governor'},{key:'pa-house1',title:'US House · District 1'},{key:'pa-house7',title:'US House · District 7'},{key:'pa-house8',title:'US House · District 8'},{key:'pa-house10',title:'US House · District 10'}]}
 };
 let ST=(location.hash.slice(1).toUpperCase() in STATES)?location.hash.slice(1).toUpperCase():(()=>{try{return localStorage.getItem('st')||'MI'}catch(e){return 'MI'}})();
 if(!STATES[ST])ST='MI';

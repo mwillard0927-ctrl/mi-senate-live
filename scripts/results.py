@@ -3,6 +3,10 @@ RACES = {
  "senate": "https://www.nbcnews.com/politics/2026-elections/michigan-senate-results",
  "governor": "https://www.nbcnews.com/politics/2026-elections/michigan-governor-results",
  "pa-governor": "https://www.nbcnews.com/politics/2026-elections/pennsylvania-governor-results",
+ "pa-house1": "https://www.nbcnews.com/politics/2026-elections/pennsylvania-us-house-district-1-results",
+ "pa-house7": "https://www.nbcnews.com/politics/2026-elections/pennsylvania-us-house-district-7-results",
+ "pa-house8": "https://www.nbcnews.com/politics/2026-elections/pennsylvania-us-house-district-8-results",
+ "pa-house10": "https://www.nbcnews.com/politics/2026-elections/pennsylvania-us-house-district-10-results",
  "house10": "https://www.nbcnews.com/politics/2026-elections/michigan-us-house-district-10-results",
 }
 now = datetime.datetime.now(datetime.timezone.utc).isoformat()

@@ -1,1 +1,64 @@
-{"candidates":[]}
+{
+ "checked": "2026-11-04T02:25:50.108360+00:00",
+ "source": "NBC News",
+ "sourceUpdated": "9:24 PM ET",
+ "percentIn": "15.2%",
+ "candidates": [
+  {
+   "name": "Abdul El-Sayed",
+   "last": "El-Sayed",
+   "party": "dem",
+   "votes": 409869,
+   "pct": 54.6,
+   "winner": false,
+   "call": ""
+  },
+  {
+   "name": "Mike Rogers",
+   "last": "Rogers",
+   "party": "gop",
+   "votes": 328375,
+   "pct": 43.7,
+   "winner": false,
+   "call": ""
+  },
+  {
+   "name": "Lydia Christensen",
+   "last": "Christensen",
+   "party": "lib",
+   "votes": 6774,
+   "pct": 0.9,
+   "winner": false,
+   "call": ""
+  },
+  {
+   "name": "Tim Long",
+   "last": "Long",
+   "party": "other",
+   "votes": 2913,
+   "pct": 0.4,
+   "winner": false,
+   "call": ""
+  },
+  {
+   "name": "Douglas Marsh",
+   "last": "Marsh",
+   "party": "other",
+   "votes": 1820,
+   "pct": 0.2,
+   "winner": false,
+   "call": ""
+  },
+  {
+   "name": "Walter Kristy",
+   "last": "Kristy",
+   "party": "other",
+   "votes": 848,
+   "pct": 0.1,
+   "winner": false,
+   "call": ""
+  }
+ ],
+ "countiesReporting": 24,
+ "counties": 83
+}

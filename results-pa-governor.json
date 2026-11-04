@@ -1,7 +1,7 @@
 {
- "checked": "2026-11-04T04:11:52.971422+00:00",
+ "checked": "2026-11-04T04:12:57.027853+00:00",
  "source": "NBC News",
- "sourceUpdated": "11:11 PM ET",
+ "sourceUpdated": "11:12 PM ET",
  "title": null,
  "percentIn": "86.4%",
  "candidates": [
@@ -36,16 +36,16 @@
  "modes": [
   {
    "mode": "Election Day",
-   "votes": 3439516,
+   "votes": 3456054,
    "c": {
-    "Shapiro": 55,
+    "Shapiro": 54,
     "Garrity": 44,
     "Krawchuk": 1
    }
   },
   {
    "mode": "Early by Mail",
-   "votes": 1050812,
+   "votes": 1053812,
    "c": {
     "Shapiro": 80,
     "Garrity": 19,

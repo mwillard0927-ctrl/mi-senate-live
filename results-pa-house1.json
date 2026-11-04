@@ -1,7 +1,7 @@
 {
- "checked": "2026-11-04T14:41:44.290618+00:00",
+ "checked": "2026-11-04T14:42:49.322121+00:00",
  "source": "NBC News",
- "sourceUpdated": "9:39 AM ET",
+ "sourceUpdated": "9:41 AM ET",
  "title": null,
  "percentIn": "98.4%",
  "candidates": [
@@ -27,7 +27,7 @@
  "modes": [
   {
    "mode": "Election Day",
-   "votes": 243556,
+   "votes": 245211,
    "c": {
     "Fitzpatrick": 53,
     "Harvie": 47
@@ -35,7 +35,7 @@
   },
   {
    "mode": "Early by Mail",
-   "votes": 105954,
+   "votes": 107383,
    "c": {
     "Harvie": 67,
     "Fitzpatrick": 33

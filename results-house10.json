@@ -1,7 +1,7 @@
 {
- "checked": "2026-11-04T06:11:25.059631+00:00",
+ "checked": "2026-11-04T06:12:29.768703+00:00",
  "source": "NBC News",
- "sourceUpdated": "1:11 AM ET",
+ "sourceUpdated": "1:12 AM ET",
  "title": null,
  "percentIn": "50%",
  "candidates": [
@@ -54,7 +54,7 @@
  "modes": [
   {
    "mode": "Election Day",
-   "votes": 116593,
+   "votes": 131976,
    "c": {
     "Bouchard": 50,
     "Hines": 47,
@@ -65,9 +65,9 @@
   },
   {
    "mode": "Early by Mail",
-   "votes": 39033,
+   "votes": 51735,
    "c": {
-    "Hines": 61,
+    "Hines": 60,
     "Bouchard": 38,
     "Kirby": 1,
     "Saliba": 1,
@@ -76,9 +76,9 @@
   },
   {
    "mode": "Early In Person",
-   "votes": 37266,
+   "votes": 51195,
    "c": {
-    "Hines": 50,
+    "Hines": 49,
     "Bouchard": 49,
     "Kirby": 1,
     "Saliba": 1,

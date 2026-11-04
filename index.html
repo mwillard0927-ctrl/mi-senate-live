@@ -42,6 +42,7 @@ h2{margin:0;font-size:22px}
 .axis{display:grid;grid-template-columns:52px 1fr 1fr 64px;gap:6px;font-size:11px;color:var(--mut);margin-bottom:4px}
 .axis span:nth-child(2){text-align:right}.axis span:nth-child(3){text-align:left}.axis span:last-child{text-align:right}
 .sw{display:inline-flex;background:var(--soft);border-radius:99px;padding:4px;margin:6px 0 4px}.sw button{font:inherit;font-size:14px;font-weight:700;border:0;background:transparent;color:var(--mut);padding:10px 18px;border-radius:99px;min-height:44px;cursor:pointer}.sw button[aria-selected=true]{background:var(--tx);color:var(--bg)}
+.go{display:inline-block;background:var(--tx);color:var(--bg);text-decoration:none;font-weight:700;border-radius:99px;padding:12px 22px;min-height:44px}
 .sep{width:60%;height:1px;background:var(--track);margin-top:26px}
 .flash{animation:fl 1.5s}@keyframes fl{0%{filter:brightness(1.35)}100%{filter:none}}
 </style></head><body>
@@ -58,7 +59,7 @@ h2{margin:0;font-size:22px}
 <script>
 const STATES={
  MI:{name:'Michigan',races:[{key:'senate',title:'US Senate'},{key:'governor',title:'Governor'},{key:'house10',title:'US House · District 10'}]},
- PA:{name:'Pennsylvania',races:[{key:'pa-governor',title:'Governor'},{key:'pa-house1',title:'US House · District 1'},{key:'pa-house7',title:'US House · District 7'},{key:'pa-house8',title:'US House · District 8'},{key:'pa-house10',title:'US House · District 10'}]}
+ PA:{name:'Pennsylvania',races:[{key:'pa-governor',title:'Governor'},{key:'pa-house1',title:'US House · District 1'},{key:'pa-house7',title:'US House · District 7'},{key:'pa-house8',title:'US House · District 8'},{key:'pa-house10',title:'US House · District 10'}],links:[{title:'State House · District 199',note:'Live numbers aren\'t available in the app for this race. Tap for Pennsylvania\'s official results.',url:'https://www.electionreturns.pa.gov/'}]}
 };
 let ST=(location.hash.slice(1).toUpperCase() in STATES)?location.hash.slice(1).toUpperCase():(()=>{try{return localStorage.getItem('st')||'MI'}catch(e){return 'MI'}})();
 if(!STATES[ST])ST='MI';
@@ -82,6 +83,9 @@ RACES.forEach((r,i)=>{
  '<div class="trend"><div class="lbl ttl">LEAD TONIGHT (VOTES)</div><div class="rows mut">Collecting…</div></div>';
  box.appendChild(el);r.el=el;r.lastKey='';
 });
+(STATES[ST].links||[]).forEach(l=>{const el=document.createElement('section');el.className='race';
+ el.innerHTML='<div class="sep" style="margin:0 0 26px"></div><div class="rhead"><h2></h2><div class="mut"></div></div><a class="go" target="_blank" rel="noopener">Open official PA results</a>';
+ el.querySelector('h2').textContent=l.title;el.querySelector('.mut').textContent=l.note;el.querySelector('a').href=l.url;box.appendChild(el)});
 }
 build();
 document.querySelectorAll('.sw button').forEach(b=>b.onclick=()=>{ST=b.dataset.s;try{localStorage.setItem('st',ST)}catch(e){}history.replaceState(null,'','#'+ST.toLowerCase());build();tick()});

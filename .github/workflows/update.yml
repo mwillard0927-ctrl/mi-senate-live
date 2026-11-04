@@ -9,7 +9,7 @@ permissions:
   contents: write
 concurrency:
   group: updater
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -25,7 +25,7 @@ jobs:
           while [ $(date +%s) -lt $end ]; do
             python scripts/results.py || true
             if [ $((i % 3)) -eq 0 ]; then python scripts/update.py || true; fi
-            git add news.json results.json
+            git add news.json results.json counties.json history.json
             if ! git diff --cached --quiet; then
               git commit -qm "Update results" && (git pull -q --rebase && git push -q || echo push-failed)
             fi

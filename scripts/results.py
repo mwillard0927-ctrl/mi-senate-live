@@ -1,6 +1,7 @@
 import json, re, urllib.request, datetime, os
 RACES = {
  "senate": "https://www.nbcnews.com/politics/2026-elections/michigan-senate-results",
+ "governor": "https://www.nbcnews.com/politics/2026-elections/michigan-governor-results",
  "house10": "https://www.nbcnews.com/politics/2026-elections/michigan-us-house-district-10-results",
 }
 now = datetime.datetime.now(datetime.timezone.utc).isoformat()

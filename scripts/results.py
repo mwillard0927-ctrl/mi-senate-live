@@ -14,6 +14,7 @@ def grab(url):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/130 Safari/537.36"})
     b = urllib.request.urlopen(req, timeout=30).read().decode("utf-8", "replace")
     return json.loads(re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', b, re.S).group(1))["props"]["pageProps"]
+errs={}
 for key, url in RACES.items():
     try:
         pp = grab(url); race = pp["races"][0]; s = race["summary"]
@@ -43,4 +44,12 @@ for key, url in RACES.items():
         json.dump(hist[-2000:], open(hf, "w"))
         print(key, out["percentIn"], [(c["last"], c["votes"]) for c in cands[:2]])
     except Exception as e:
-        print(key, "ERR", repr(e))
+        print(key, "ERR", repr(e)); errs[key]=repr(e)[:200]
+
+try:
+    req = urllib.request.Request("https://www.nbcnews.com/politics/2026-elections/pennsylvania-results", headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/130 Safari/537.36"})
+    pb = urllib.request.urlopen(req, timeout=30).read().decode("utf-8", "replace")
+    errs["_pa_links"] = sorted(set(re.findall(r'/politics/2026-elections/pennsylvania[^"\\ ]*', pb)))[:80]
+except Exception as e:
+    errs["_pa_links"] = repr(e)
+json.dump(errs, open("errors.json", "w"), indent=1)

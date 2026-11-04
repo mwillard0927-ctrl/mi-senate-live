@@ -71,7 +71,7 @@ RACES.forEach((r,i)=>{
  '<div class="h2h"><div class="side sd" style="background:var(--d)"><div class="p">DEMOCRAT</div><div class="n">—</div><div class="pct">—</div><div class="v"></div></div>'+
  '<div class="side sr" style="background:var(--r)"><div class="p">REPUBLICAN</div><div class="n">—</div><div class="pct">—</div><div class="v"></div></div></div>'+
  '<div class="mid"><div class="mg" style="font-size:15px;font-weight:700"></div><div class="track"><i style="width:0"></i></div><div class="mut cty"></div><div class="mut oth"></div></div>'+
- '<div class="trend"><div class="lbl">HALF-HOUR TREND · LEAD AT EACH :00 / :30</div><div class="rows mut">Collecting…</div></div>';
+ '<div class="trend"><div class="lbl ttl">LEAD TONIGHT (VOTES)</div><div class="rows mut">Collecting…</div></div>';
  box.appendChild(el);r.el=el;r.lastKey='';
 });
 function fill(el,c,lead,color){
@@ -82,37 +82,34 @@ function fill(el,c,lead,color){
  const t=c.winner?'WINNER':(lead&&c.votes?'LEADING':'');
  if(t){const s=document.createElement('div');s.className='tag';s.textContent=t;s.style.color=color;el.appendChild(s)}
 }
-function halfHours(hist){
- if(!hist.length)return[];
- const pts=hist.map(h=>({...h,ts:new Date(h.t).getTime()}));
- const start=Math.ceil(pts[0].ts/1800000)*1800000, end=Date.now();
- const out=[];
- for(let b=start;b<=end;b+=1800000){
-  let s=null;for(const p of pts){if(p.ts<=b)s=p;else break}
-  if(s)out.push({b,...s});
- }
- const last=pts[pts.length-1];
- if(!out.length||out[out.length-1].ts!==last.ts)out.push({b:last.ts,...last,now:true});
- return out;
-}
 function renderTrend(r,hist,dName,rName){
- const rows=halfHours(hist),box=r.el.querySelector('.rows');
- if(!rows.length){box.textContent='Trend starts as votes come in.';return}
- const maxLead=Math.max(1,...rows.map(x=>Math.abs(x.d-x.r)));
+ const box=r.el.querySelector('.rows');
+ const pts=hist.map(h=>({x:new Date(h.t).getTime(),y:h.d-h.r}));
+ if(pts.length<2){box.className='rows mut';box.textContent='The graph starts once a few updates come in.';return}
+ const W=340,H=180,L=44,R=10,T=12,B=26,iw=W-L-R,ih=H-T-B;
+ const x0=pts[0].x,x1=Math.max(pts[pts.length-1].x,x0+60000);
+ let lo=Math.min(0,...pts.map(p=>p.y)),hi=Math.max(0,...pts.map(p=>p.y));
+ const pad=(hi-lo||1)*0.12;hi+=hi>0?pad:0;lo-=lo<0?pad:0;if(hi===lo)hi=lo+1;
+ const X=v=>L+(v-x0)/(x1-x0)*iw, Y=v=>T+(hi-v)/(hi-lo)*ih, y0=Y(0);
+ const kf=v=>{const a=Math.abs(v);return (v<0?'-':'')+(a>=1000?(a/1000).toFixed(a>=10000?0:1)+'k':a)};
+ const line=pts.map((p,i)=>(i?'L':'M')+X(p.x).toFixed(1)+','+Y(p.y).toFixed(1)).join('');
+ const area=line+'L'+X(pts[pts.length-1].x).toFixed(1)+','+y0+'L'+X(pts[0].x).toFixed(1)+','+y0+'Z';
+ const id='c'+r.key;
+ let g='';
+ for(let i=0;i<=4;i++){const v=lo+(hi-lo)*i/4,yy=Y(v);g+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+yy+'" y2="'+yy+'" stroke="var(--track)"/><text x="'+(L-6)+'" y="'+(yy+4)+'" text-anchor="end" font-size="10" fill="var(--mut)">'+kf(Math.round(v))+'</text>'}
+ const step=30*60000;let tx='';
+ for(let t=Math.ceil(x0/step)*step;t<=x1;t+=step){const xx=X(t);tx+='<line x1="'+xx+'" x2="'+xx+'" y1="'+T+'" y2="'+(T+ih)+'" stroke="var(--track)" stroke-dasharray="2 3"/><text x="'+xx+'" y="'+(H-8)+'" text-anchor="middle" font-size="10" fill="var(--mut)">'+new Date(t).toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})+'</text>'}
+ const last=pts[pts.length-1],lc=last.y>=0?'var(--d)':'var(--r)';
  box.className='rows';
- let h='<div class="axis"><span></span><span>'+esc(dName)+' lead</span><span>'+esc(rName)+' lead</span><span>% in</span></div>';
- rows.forEach((x,i)=>{
-  const lead=x.d-x.r,w=Math.round(Math.abs(lead)/maxLead*100);
-  const prev=i?rows[i-1]:null,ch=prev?(lead-(prev.d-prev.r)):0;
-  const tm=x.now?'Now':new Date(x.b).toLocaleTimeString([],{hour:'numeric',minute:'2-digit'});
-  const lbl=(lead>=0?dName:rName)+' +'+fmt(Math.abs(lead))+(prev?(' ('+(ch>=0?'▲ '+dName:'▲ '+rName)+' '+fmt(Math.abs(ch))+')'):'');
-  h+='<div class="tr"><span class="t">'+tm+'</span>'+
-   '<span class="bl">'+(lead>0?'<i style="width:'+w+'%"></i>':'')+'</span>'+
-   '<span class="br">'+(lead<0?'<i style="width:'+w+'%"></i>':'')+'</span>'+
-   '<span class="pin">'+esc(x.pin||'')+'</span></div>'+
-   '<div class="lead" style="color:'+(lead>=0?'var(--d)':'var(--r)')+'">'+esc(lbl)+'</div>';
- });
- box.innerHTML=h;
+ box.innerHTML='<svg viewBox="0 0 '+W+' '+H+'" width="100%" role="img" aria-label="Lead over time">'+
+  '<defs><clipPath id="'+id+'a"><rect x="0" y="0" width="'+W+'" height="'+y0+'"/></clipPath><clipPath id="'+id+'b"><rect x="0" y="'+y0+'" width="'+W+'" height="'+(H-y0)+'"/></clipPath></defs>'+
+  g+tx+
+  '<path d="'+area+'" fill="var(--d)" opacity=".15" clip-path="url(#'+id+'a)"/><path d="'+area+'" fill="var(--r)" opacity=".15" clip-path="url(#'+id+'b)"/>'+
+  '<line x1="'+L+'" x2="'+(W-R)+'" y1="'+y0+'" y2="'+y0+'" stroke="var(--mut)" stroke-width="1"/>'+
+  '<path d="'+line+'" fill="none" stroke="var(--d)" stroke-width="2.6" stroke-linejoin="round" clip-path="url(#'+id+'a)"/><path d="'+line+'" fill="none" stroke="var(--r)" stroke-width="2.6" stroke-linejoin="round" clip-path="url(#'+id+'b)"/>'+
+  '<circle cx="'+X(last.x)+'" cy="'+Y(last.y)+'" r="4" fill="'+lc+'"/></svg>'+
+  '<div class="lead" style="color:'+lc+';font-size:13px;margin-top:4px">'+esc((last.y>=0?dName:rName)+' +'+fmt(Math.abs(last.y)))+' now</div>';
+ r.el.querySelector('.ttl').textContent=('LEAD TONIGHT · '+dName+' ▲ / '+rName+' ▼').toUpperCase();
 }
 async function loadRace(r){
  try{

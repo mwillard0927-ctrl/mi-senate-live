@@ -1,16 +1,16 @@
 {
- "checked": "2026-11-04T04:26:30.289763+00:00",
+ "checked": "2026-11-04T04:27:38.294989+00:00",
  "source": "NBC News",
- "sourceUpdated": "11:26 PM ET",
+ "sourceUpdated": "11:27 PM ET",
  "title": null,
- "percentIn": "72%",
+ "percentIn": "73.3%",
  "candidates": [
   {
    "name": "Bob Harvie",
    "last": "Harvie",
    "party": "dem",
-   "votes": 141521,
-   "pct": 53.6,
+   "votes": 143872,
+   "pct": 53.5,
    "winner": false,
    "call": ""
   },
@@ -18,8 +18,8 @@
    "name": "Brian Fitzpatrick",
    "last": "Fitzpatrick",
    "party": "gop",
-   "votes": 122292,
-   "pct": 46.4,
+   "votes": 124803,
+   "pct": 46.5,
    "winner": false,
    "call": ""
   }

@@ -1,15 +1,16 @@
 {
- "checked": "2026-11-04T03:42:04.119294+00:00",
+ "checked": "2026-11-04T03:43:49.628474+00:00",
  "source": "NBC News",
- "sourceUpdated": "10:41 PM ET",
- "percentIn": "26.2%",
+ "sourceUpdated": "10:43 PM ET",
+ "title": null,
+ "percentIn": "26.3%",
  "candidates": [
   {
    "name": "Abdul El-Sayed",
    "last": "El-Sayed",
    "party": "dem",
-   "votes": 681460,
-   "pct": 52.8,
+   "votes": 683879,
+   "pct": 52.6,
    "winner": false,
    "call": ""
   },
@@ -17,8 +18,8 @@
    "name": "Mike Rogers",
    "last": "Rogers",
    "party": "gop",
-   "votes": 586841,
-   "pct": 45.4,
+   "votes": 592598,
+   "pct": 45.6,
    "winner": false,
    "call": ""
   },
@@ -26,7 +27,7 @@
    "name": "Lydia Christensen",
    "last": "Christensen",
    "party": "lib",
-   "votes": 12456,
+   "votes": 12512,
    "pct": 1,
    "winner": false,
    "call": ""
@@ -35,7 +36,7 @@
    "name": "Tim Long",
    "last": "Long",
    "party": "other",
-   "votes": 5905,
+   "votes": 5956,
    "pct": 0.5,
    "winner": false,
    "call": ""
@@ -44,7 +45,7 @@
    "name": "Douglas Marsh",
    "last": "Marsh",
    "party": "other",
-   "votes": 3133,
+   "votes": 3152,
    "pct": 0.2,
    "winner": false,
    "call": ""
@@ -53,10 +54,48 @@
    "name": "Walter Kristy",
    "last": "Kristy",
    "party": "other",
-   "votes": 1701,
+   "votes": 1706,
    "pct": 0.1,
    "winner": false,
    "call": ""
+  }
+ ],
+ "modes": [
+  {
+   "mode": "Election Day",
+   "votes": 568810,
+   "c": {
+    "Rogers": 51,
+    "El-Sayed": 47,
+    "Christensen": 1,
+    "Long": 0,
+    "Marsh": 0,
+    "Kristy": 0
+   }
+  },
+  {
+   "mode": "Early by Mail",
+   "votes": 307586,
+   "c": {
+    "El-Sayed": 64,
+    "Rogers": 34,
+    "Christensen": 1,
+    "Long": 0,
+    "Marsh": 0,
+    "Kristy": 0
+   }
+  },
+  {
+   "mode": "Early In Person",
+   "votes": 211191,
+   "c": {
+    "El-Sayed": 58,
+    "Rogers": 41,
+    "Christensen": 0,
+    "Long": 0,
+    "Marsh": 0,
+    "Kristy": 0
+   }
   }
  ],
  "countiesReporting": 55,

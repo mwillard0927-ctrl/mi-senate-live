@@ -1,0 +1,91 @@
+{
+ "checked": "2026-11-04T03:43:49.628474+00:00",
+ "source": "NBC News",
+ "sourceUpdated": "10:43 PM ET",
+ "title": null,
+ "percentIn": "21.3%",
+ "candidates": [
+  {
+   "name": "Michael Bouchard",
+   "last": "Bouchard",
+   "party": "gop",
+   "votes": 39554,
+   "pct": 48.9,
+   "winner": false,
+   "call": ""
+  },
+  {
+   "name": "Christina Hines",
+   "last": "Hines",
+   "party": "dem",
+   "votes": 39164,
+   "pct": 48.4,
+   "winner": false,
+   "call": ""
+  },
+  {
+   "name": "Andrea Kirby",
+   "last": "Kirby",
+   "party": "other",
+   "votes": 997,
+   "pct": 1.2,
+   "winner": false,
+   "call": ""
+  },
+  {
+   "name": "Mike Saliba",
+   "last": "Saliba",
+   "party": "lib",
+   "votes": 841,
+   "pct": 1,
+   "winner": false,
+   "call": ""
+  },
+  {
+   "name": "Kwabena Nkromo",
+   "last": "Nkromo",
+   "party": "other",
+   "votes": 328,
+   "pct": 0.4,
+   "winner": false,
+   "call": ""
+  }
+ ],
+ "modes": [
+  {
+   "mode": "Election Day",
+   "votes": 30094,
+   "c": {
+    "Bouchard": 53,
+    "Hines": 44,
+    "Kirby": 1,
+    "Saliba": 1,
+    "Nkromo": 0
+   }
+  },
+  {
+   "mode": "Early In Person",
+   "votes": 17415,
+   "c": {
+    "Bouchard": 51,
+    "Hines": 48,
+    "Kirby": 1,
+    "Saliba": 1,
+    "Nkromo": 0
+   }
+  },
+  {
+   "mode": "Early by Mail",
+   "votes": 6370,
+   "c": {
+    "Hines": 65,
+    "Bouchard": 32,
+    "Kirby": 1,
+    "Saliba": 1,
+    "Nkromo": 0
+   }
+  }
+ ],
+ "countiesReporting": 2,
+ "counties": 2
+}

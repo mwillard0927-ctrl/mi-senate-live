@@ -1,7 +1,7 @@
 {
- "checked": "2026-11-04T14:51:21.625698+00:00",
+ "checked": "2026-11-04T14:52:28.678148+00:00",
  "source": "NBC News",
- "sourceUpdated": "9:47 AM ET",
+ "sourceUpdated": "9:51 AM ET",
  "title": null,
  "percentIn": "98.3%",
  "candidates": [
@@ -27,7 +27,7 @@
  "modes": [
   {
    "mode": "Election Day",
-   "votes": 213749,
+   "votes": 213886,
    "c": {
     "Brooks": 50,
     "Mackenzie": 50
@@ -35,7 +35,7 @@
   },
   {
    "mode": "Early by Mail",
-   "votes": 74730,
+   "votes": 79139,
    "c": {
     "Brooks": 74,
     "Mackenzie": 26

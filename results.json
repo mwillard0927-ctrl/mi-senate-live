@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-04T05:42:13.595110+00:00",
+ "checked": "2026-11-04T05:43:18.686303+00:00",
  "source": "NBC News",
  "sourceUpdated": "12:42 AM ET",
  "title": null,
@@ -9,7 +9,7 @@
    "name": "Abdul El-Sayed",
    "last": "El-Sayed",
    "party": "dem",
-   "votes": 1496677,
+   "votes": 1496797,
    "pct": 50.7,
    "winner": false,
    "call": ""
@@ -18,7 +18,7 @@
    "name": "Mike Rogers",
    "last": "Rogers",
    "party": "gop",
-   "votes": 1398451,
+   "votes": 1398661,
    "pct": 47.4,
    "winner": false,
    "call": ""
@@ -27,7 +27,7 @@
    "name": "Lydia Christensen",
    "last": "Christensen",
    "party": "lib",
-   "votes": 30410,
+   "votes": 30414,
    "pct": 1,
    "winner": false,
    "call": ""
@@ -36,7 +36,7 @@
    "name": "Tim Long",
    "last": "Long",
    "party": "other",
-   "votes": 15624,
+   "votes": 15628,
    "pct": 0.5,
    "winner": false,
    "call": ""
@@ -45,7 +45,7 @@
    "name": "Douglas Marsh",
    "last": "Marsh",
    "party": "other",
-   "votes": 7468,
+   "votes": 7470,
    "pct": 0.3,
    "winner": false,
    "call": ""

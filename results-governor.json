@@ -1,16 +1,16 @@
 {
- "checked": "2026-11-04T03:50:06.996508+00:00",
+ "checked": "2026-11-04T04:11:52.971422+00:00",
  "source": "NBC News",
- "sourceUpdated": "10:49 PM ET",
+ "sourceUpdated": "11:11 PM ET",
  "title": null,
- "percentIn": "27.8%",
+ "percentIn": "31%",
  "candidates": [
   {
    "name": "Jocelyn Benson",
    "last": "Benson",
    "party": "dem",
-   "votes": 747002,
-   "pct": 54.4,
+   "votes": 812499,
+   "pct": 53.1,
    "winner": false,
    "call": ""
   },
@@ -18,8 +18,8 @@
    "name": "John James",
    "last": "James",
    "party": "gop",
-   "votes": 603576,
-   "pct": 44,
+   "votes": 691796,
+   "pct": 45.2,
    "winner": false,
    "call": ""
   },
@@ -27,7 +27,7 @@
    "name": "Anthony Hudson",
    "last": "Hudson",
    "party": "lib",
-   "votes": 12510,
+   "votes": 14428,
    "pct": 0.9,
    "winner": false,
    "call": ""
@@ -36,7 +36,7 @@
    "name": "Donna Brandenburg",
    "last": "Brandenburg",
    "party": "other",
-   "votes": 5077,
+   "votes": 5821,
    "pct": 0.4,
    "winner": false,
    "call": ""
@@ -45,8 +45,8 @@
    "name": "Douglas Campbell",
    "last": "Campbell",
    "party": "other",
-   "votes": 4849,
-   "pct": 0.4,
+   "votes": 5352,
+   "pct": 0.3,
    "winner": false,
    "call": ""
   }
@@ -54,10 +54,10 @@
  "modes": [
   {
    "mode": "Election Day",
-   "votes": 578466,
+   "votes": 620981,
    "c": {
-    "James": 50,
-    "Benson": 48,
+    "James": 51,
+    "Benson": 47,
     "Hudson": 1,
     "Brandenburg": 0,
     "Campbell": 0
@@ -65,10 +65,10 @@
   },
   {
    "mode": "Early by Mail",
-   "votes": 323810,
+   "votes": 344081,
    "c": {
     "Benson": 68,
-    "James": 30,
+    "James": 31,
     "Hudson": 1,
     "Brandenburg": 0,
     "Campbell": 0
@@ -76,16 +76,16 @@
   },
   {
    "mode": "Early In Person",
-   "votes": 225690,
+   "votes": 227034,
    "c": {
-    "Benson": 60,
-    "James": 39,
+    "Benson": 59,
+    "James": 40,
     "Hudson": 0,
     "Brandenburg": 0,
     "Campbell": 0
    }
   }
  ],
- "countiesReporting": 58,
+ "countiesReporting": 65,
  "counties": 83
 }

@@ -1,7 +1,7 @@
 {
- "checked": "2026-11-04T05:44:23.201081+00:00",
+ "checked": "2026-11-04T05:45:28.499831+00:00",
  "source": "NBC News",
- "sourceUpdated": "12:44 AM ET",
+ "sourceUpdated": "12:45 AM ET",
  "title": null,
  "percentIn": "59.9%",
  "candidates": [
@@ -12,7 +12,7 @@
    "votes": 1502731,
    "pct": 50.7,
    "winner": false,
-   "call": ""
+   "call": "G"
   },
   {
    "name": "Mike Rogers",

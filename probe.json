@@ -1,7 +1,0 @@
-{
- "https://www.gametimepa.com/elections/results/": "<HTTPError 402: 'Payment Required'>",
- "https://www.gametimepa.com/elections/results/race/2026-11-03-state_house-PA-39279/": "<HTTPError 402: 'Payment Required'>",
- "https://www.gametimepa.com/elections/results/2026-11-03/state/PA/": "<HTTPError 402: 'Payment Required'>",
- "https://www.gametimepa.com/elections/results/2026-11-03/": "<HTTPError 402: 'Payment Required'>",
- "https://www.pennlive.com/elections/results/": "<HTTPError 403: 'Forbidden'>"
-}

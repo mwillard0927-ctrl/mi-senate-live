@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Michigan Senate Live</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--tx:#14171c;--mut:#5b6472;--line:#e3e6ea;--acc:#2456d6;--live:#d22}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1115;--card:#181b21;--tx:#e8eaee;--mut:#9aa3b0;--line:#272b33;--acc:#6f9bff}}
+body{background:var(--bg);color:var(--tx);font:15px/1.45 system-ui,sans-serif;margin:0}
+.w{max-width:640px;margin:0 auto;padding:16px}
+h1{font-size:20px;margin:4px 0}
+.live{display:inline-block;background:var(--live);color:#fff;border-radius:99px;padding:2px 10px;font-size:12px;font-weight:600}
+.mut{color:var(--mut);font-size:13px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:12px 0}
+a.btn{display:block;background:var(--acc);color:#fff;text-decoration:none;border-radius:10px;padding:12px 14px;font-weight:600;margin:8px 0}
+a.btn span{display:block;font-weight:400;font-size:12px;opacity:.85}
+.item{padding:10px 0;border-top:1px solid var(--line)}
+.item:first-child{border-top:0}
+.item a{color:var(--tx);text-decoration:none;font-weight:600}
+.new{color:var(--live);font-size:11px;font-weight:700;margin-right:6px}
+</style></head><body>
+<div class="w">
+<span class="live">● LIVE</span>
+<h1>US Senate · Michigan</h1>
+<div class="mut">El-Sayed (D) vs. Rogers (R) · <span id="upd">loading…</span></div>
+
+<div class="card"><b>Live vote count (AP)</b>
+<a class="btn" target="_blank" href="https://www.google.com/search?q=michigan+senate+election+results">Google live results<span>AP counts, % reporting, county map</span></a>
+<a class="btn" target="_blank" href="https://michigan.gov/ElectionResults">Michigan official results<span>Secretary of State unofficial returns</span></a>
+</div>
+
+<div class="card"><b>Latest news</b> <span class="mut">· updates every ~5 min</span>
+<div id="feed" class="mut" style="margin-top:8px">Loading…</div></div>
+</div>
+<script>
+const seen=new Set();let first=true;
+function ago(d){const m=Math.max(0,Math.round((Date.now()-new Date(d))/60000));return m<60?m+'m ago':Math.round(m/60)+'h ago'}
+async function load(){
+ try{
+  const j=await (await fetch('news.json?t='+Date.now(),{cache:'no-store'})).json();
+  const f=document.getElementById('feed');
+  if(!j.items.length){f.textContent='Waiting for the first update…';return}
+  f.className='';f.innerHTML='';
+  j.items.forEach(i=>{const e=document.createElement('div');e.className='item';
+   const isNew=!first&&!seen.has(i.link);seen.add(i.link);
+   e.innerHTML=(isNew?'<span class="new">NEW</span>':'')+'<a target="_blank"></a><div class="mut"></div>';
+   e.querySelector('a').textContent=i.title;e.querySelector('a').href=i.link;
+   e.querySelector('.mut').textContent=ago(i.date);f.appendChild(e)});
+  first=false;
+  if(j.updated)document.getElementById('upd').textContent='news checked '+ago(j.updated);
+ }catch(e){document.getElementById('feed').textContent='Couldn\'t load news — retrying.'}
+}
+load();setInterval(load,60000);
+</script>
+</body></html>

@@ -1,16 +1,16 @@
 {
- "checked": "2026-11-04T06:07:06.073199+00:00",
+ "checked": "2026-11-04T06:08:11.108357+00:00",
  "source": "NBC News",
- "sourceUpdated": "1:06 AM ET",
+ "sourceUpdated": "1:07 AM ET",
  "title": null,
- "percentIn": "68.7%",
+ "percentIn": "69.2%",
  "candidates": [
   {
    "name": "Abdul El-Sayed",
    "last": "El-Sayed",
    "party": "dem",
-   "votes": 1753564,
-   "pct": 51.7,
+   "votes": 1764200,
+   "pct": 51.6,
    "winner": false,
    "call": "G"
   },
@@ -18,8 +18,8 @@
    "name": "Mike Rogers",
    "last": "Rogers",
    "party": "gop",
-   "votes": 1569564,
-   "pct": 46.3,
+   "votes": 1583646,
+   "pct": 46.4,
    "winner": false,
    "call": ""
   },
@@ -27,7 +27,7 @@
    "name": "Lydia Christensen",
    "last": "Christensen",
    "party": "lib",
-   "votes": 35085,
+   "votes": 35526,
    "pct": 1,
    "winner": false,
    "call": ""
@@ -36,7 +36,7 @@
    "name": "Tim Long",
    "last": "Long",
    "party": "other",
-   "votes": 18328,
+   "votes": 18676,
    "pct": 0.5,
    "winner": false,
    "call": ""
@@ -45,7 +45,7 @@
    "name": "Douglas Marsh",
    "last": "Marsh",
    "party": "other",
-   "votes": 8792,
+   "votes": 8894,
    "pct": 0.3,
    "winner": false,
    "call": ""
@@ -54,7 +54,7 @@
    "name": "Walter Kristy",
    "last": "Kristy",
    "party": "other",
-   "votes": 5170,
+   "votes": 5252,
    "pct": 0.2,
    "winner": false,
    "call": ""
@@ -63,7 +63,7 @@
  "modes": [
   {
    "mode": "Election Day",
-   "votes": 1095186,
+   "votes": 1335826,
    "c": {
     "Rogers": 54,
     "El-Sayed": 44,
@@ -75,10 +75,10 @@
   },
   {
    "mode": "Early by Mail",
-   "votes": 613282,
+   "votes": 872076,
    "c": {
-    "El-Sayed": 61,
-    "Rogers": 37,
+    "El-Sayed": 60,
+    "Rogers": 38,
     "Christensen": 1,
     "Long": 1,
     "Marsh": 0,
@@ -87,10 +87,10 @@
   },
   {
    "mode": "Early In Person",
-   "votes": 338786,
+   "votes": 412786,
    "c": {
-    "El-Sayed": 55,
-    "Rogers": 44,
+    "El-Sayed": 54,
+    "Rogers": 45,
     "Christensen": 1,
     "Long": 0,
     "Marsh": 0,

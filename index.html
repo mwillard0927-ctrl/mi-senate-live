@@ -51,11 +51,7 @@ h1{margin:0;font-size:24px}
   <div class="mut" id="cty"></div>
   <div class="mut" id="others"></div>
  </div>
- <div class="news">
-  <div class="lbl">LATEST NEWS</div>
-  <div id="feed" class="mut" style="width:100%">Loading…</div>
- </div>
- <div class="mut" style="margin-bottom:24px;font-size:11px">Results via NBC News · refreshes automatically</div>
+ <div class="mut" style="margin-bottom:24px;font-size:11px">Results via NBC News · updates automatically</div>
 </div>
 <script>
 const fmt=n=>Number(n||0).toLocaleString();
@@ -88,18 +84,7 @@ async function loadResults(){
   const key=c.map(x=>x.votes).join();if(lastKey&&key!==lastKey){const h=document.getElementById('h2h');h.classList.remove('flash');void h.offsetWidth;h.classList.add('flash')}lastKey=key;
  }catch(e){document.getElementById('sub').textContent='Couldn\'t load results — retrying'}
 }
-async function loadNews(){
- try{
-  const j=await getJSON('news.json');const f=document.getElementById('feed');
-  if(!j.items||!j.items.length){f.textContent='Waiting for headlines…';return}
-  f.className='';f.innerHTML='';
-  j.items.slice(0,15).forEach(i=>{const e=document.createElement('div');e.className='item';const isNew=!first&&!seen.has(i.link);seen.add(i.link);
-   e.innerHTML=(isNew?'<span class="new">NEW</span>':'')+'<a target="_blank" rel="noopener"></a><div class="mut"></div>';
-   e.querySelector('a').textContent=i.title;e.querySelector('a').href=i.link;e.querySelector('.mut').textContent=ago(i.date);f.appendChild(e)});
-  first=false;
- }catch(e){}
-}
-function tick(){loadResults();loadNews()}
+function tick(){loadResults()}
 tick();setInterval(tick,60000);
 if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js',{scope:'./'}).catch(()=>{});
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)tick()});

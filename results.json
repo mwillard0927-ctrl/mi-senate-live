@@ -1,7 +1,7 @@
 {
- "checked": "2026-11-04T07:52:41.759723+00:00",
+ "checked": "2026-11-04T07:53:47.512046+00:00",
  "source": "NBC News",
- "sourceUpdated": "2:52 AM ET",
+ "sourceUpdated": "2:53 AM ET",
  "title": null,
  "percentIn": "86.5%",
  "candidates": [
@@ -9,7 +9,7 @@
    "name": "Abdul El-Sayed",
    "last": "El-Sayed",
    "party": "dem",
-   "votes": 2229032,
+   "votes": 2229275,
    "pct": 51.8,
    "winner": true,
    "call": "P"
@@ -18,7 +18,7 @@
    "name": "Mike Rogers",
    "last": "Rogers",
    "party": "gop",
-   "votes": 1985763,
+   "votes": 1986043,
    "pct": 46.2,
    "winner": false,
    "call": ""
@@ -27,7 +27,7 @@
    "name": "Lydia Christensen",
    "last": "Christensen",
    "party": "lib",
-   "votes": 44502,
+   "votes": 44504,
    "pct": 1,
    "winner": false,
    "call": ""
@@ -36,7 +36,7 @@
    "name": "Tim Long",
    "last": "Long",
    "party": "other",
-   "votes": 23541,
+   "votes": 23546,
    "pct": 0.5,
    "winner": false,
    "call": ""
@@ -54,7 +54,7 @@
    "name": "Walter Kristy",
    "last": "Kristy",
    "party": "other",
-   "votes": 6450,
+   "votes": 6451,
    "pct": 0.1,
    "winner": false,
    "call": ""
@@ -75,7 +75,7 @@
   },
   {
    "mode": "Early by Mail",
-   "votes": 1041297,
+   "votes": 1041828,
    "c": {
     "El-Sayed": 61,
     "Rogers": 37,

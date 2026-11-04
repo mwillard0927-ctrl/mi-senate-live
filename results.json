@@ -1,16 +1,16 @@
 {
- "checked": "2026-11-04T04:14:01.007668+00:00",
+ "checked": "2026-11-04T04:15:05.101203+00:00",
  "source": "NBC News",
- "sourceUpdated": "11:13 PM ET",
+ "sourceUpdated": "11:14 PM ET",
  "title": null,
- "percentIn": "31.6%",
+ "percentIn": "31.9%",
  "candidates": [
   {
    "name": "Abdul El-Sayed",
    "last": "El-Sayed",
    "party": "dem",
-   "votes": 794832,
-   "pct": 51,
+   "votes": 800336,
+   "pct": 50.9,
    "winner": false,
    "call": ""
   },
@@ -18,8 +18,8 @@
    "name": "Mike Rogers",
    "last": "Rogers",
    "party": "gop",
-   "votes": 734764,
-   "pct": 47.1,
+   "votes": 742985,
+   "pct": 47.2,
    "winner": false,
    "call": ""
   },
@@ -27,7 +27,7 @@
    "name": "Lydia Christensen",
    "last": "Christensen",
    "party": "lib",
-   "votes": 15390,
+   "votes": 15593,
    "pct": 1,
    "winner": false,
    "call": ""
@@ -36,7 +36,7 @@
    "name": "Tim Long",
    "last": "Long",
    "party": "other",
-   "votes": 7578,
+   "votes": 7701,
    "pct": 0.5,
    "winner": false,
    "call": ""
@@ -45,7 +45,7 @@
    "name": "Douglas Marsh",
    "last": "Marsh",
    "party": "other",
-   "votes": 3772,
+   "votes": 3803,
    "pct": 0.2,
    "winner": false,
    "call": ""
@@ -54,7 +54,7 @@
    "name": "Walter Kristy",
    "last": "Kristy",
    "party": "other",
-   "votes": 2115,
+   "votes": 2145,
    "pct": 0.1,
    "winner": false,
    "call": ""
@@ -63,7 +63,7 @@
  "modes": [
   {
    "mode": "Election Day",
-   "votes": 622810,
+   "votes": 623774,
    "c": {
     "Rogers": 52,
     "El-Sayed": 46,
@@ -75,7 +75,7 @@
   },
   {
    "mode": "Early by Mail",
-   "votes": 342409,
+   "votes": 342796,
    "c": {
     "El-Sayed": 63,
     "Rogers": 35,

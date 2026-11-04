@@ -1,16 +1,16 @@
 {
- "checked": "2026-11-04T06:14:38.187599+00:00",
+ "checked": "2026-11-04T06:15:43.055360+00:00",
  "source": "NBC News",
- "sourceUpdated": "1:14 AM ET",
+ "sourceUpdated": "1:15 AM ET",
  "title": null,
- "percentIn": "50%",
+ "percentIn": "61.1%",
  "candidates": [
   {
    "name": "Christina Hines",
    "last": "Hines",
    "party": "dem",
-   "votes": 95191,
-   "pct": 50.1,
+   "votes": 116378,
+   "pct": 50.2,
    "winner": false,
    "call": ""
   },
@@ -18,7 +18,7 @@
    "name": "Michael Bouchard",
    "last": "Bouchard",
    "party": "gop",
-   "votes": 89961,
+   "votes": 109910,
    "pct": 47.4,
    "winner": false,
    "call": ""
@@ -27,7 +27,7 @@
    "name": "Andrea Kirby",
    "last": "Kirby",
    "party": "other",
-   "votes": 2289,
+   "votes": 2707,
    "pct": 1.2,
    "winner": false,
    "call": ""
@@ -36,7 +36,7 @@
    "name": "Mike Saliba",
    "last": "Saliba",
    "party": "lib",
-   "votes": 1788,
+   "votes": 2130,
    "pct": 0.9,
    "winner": false,
    "call": ""
@@ -45,7 +45,7 @@
    "name": "Kwabena Nkromo",
    "last": "Nkromo",
    "party": "other",
-   "votes": 707,
+   "votes": 825,
    "pct": 0.4,
    "winner": false,
    "call": ""

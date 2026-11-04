@@ -1,16 +1,16 @@
 {
- "checked": "2026-11-04T04:15:05.101203+00:00",
+ "checked": "2026-11-04T04:16:09.418182+00:00",
  "source": "NBC News",
- "sourceUpdated": "11:14 PM ET",
+ "sourceUpdated": "11:15 PM ET",
  "title": null,
- "percentIn": "31.2%",
+ "percentIn": "31.8%",
  "candidates": [
   {
    "name": "Jocelyn Benson",
    "last": "Benson",
    "party": "dem",
-   "votes": 816659,
-   "pct": 53,
+   "votes": 829225,
+   "pct": 52.9,
    "winner": false,
    "call": ""
   },
@@ -18,8 +18,8 @@
    "name": "John James",
    "last": "James",
    "party": "gop",
-   "votes": 698648,
-   "pct": 45.3,
+   "votes": 712801,
+   "pct": 45.4,
    "winner": false,
    "call": ""
   },
@@ -27,7 +27,7 @@
    "name": "Anthony Hudson",
    "last": "Hudson",
    "party": "lib",
-   "votes": 14633,
+   "votes": 14882,
    "pct": 0.9,
    "winner": false,
    "call": ""
@@ -36,7 +36,7 @@
    "name": "Donna Brandenburg",
    "last": "Brandenburg",
    "party": "other",
-   "votes": 5893,
+   "votes": 5989,
    "pct": 0.4,
    "winner": false,
    "call": ""
@@ -45,7 +45,7 @@
    "name": "Douglas Campbell",
    "last": "Campbell",
    "party": "other",
-   "votes": 5383,
+   "votes": 5461,
    "pct": 0.3,
    "winner": false,
    "call": ""
@@ -54,7 +54,7 @@
  "modes": [
   {
    "mode": "Election Day",
-   "votes": 624825,
+   "votes": 634723,
    "c": {
     "James": 51,
     "Benson": 47,
@@ -65,7 +65,7 @@
   },
   {
    "mode": "Early by Mail",
-   "votes": 346260,
+   "votes": 351954,
    "c": {
     "Benson": 68,
     "James": 31,
@@ -76,11 +76,11 @@
   },
   {
    "mode": "Early In Person",
-   "votes": 227990,
+   "votes": 232284,
    "c": {
     "Benson": 59,
     "James": 40,
-    "Hudson": 1,
+    "Hudson": 0,
     "Brandenburg": 0,
     "Campbell": 0
    }

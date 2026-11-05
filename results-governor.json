@@ -1,7 +1,7 @@
 {
- "checked": "2026-11-05T20:55:54.508973+00:00",
+ "checked": "2026-11-05T20:57:06.871252+00:00",
  "source": "NBC News",
- "sourceUpdated": "2:49 PM ET",
+ "sourceUpdated": "3:56 PM ET",
  "title": null,
  "percentIn": "97.6%",
  "candidates": [
@@ -54,7 +54,7 @@
  "modes": [
   {
    "mode": "Election Day",
-   "votes": 1549357,
+   "votes": 1550361,
    "c": {
     "James": 53,
     "Benson": 45,

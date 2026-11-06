@@ -1,7 +1,7 @@
 {
- "checked": "2026-11-06T14:27:17.102514+00:00",
+ "checked": "2026-11-06T14:28:27.214102+00:00",
  "source": "NBC News",
- "sourceUpdated": "Nov. 5, 5:24 PM ET",
+ "sourceUpdated": "9:26 AM ET",
  "title": null,
  "percentIn": "98.7%",
  "candidates": [
@@ -36,7 +36,7 @@
  "modes": [
   {
    "mode": "Election Day",
-   "votes": 3838204,
+   "votes": 3839358,
    "c": {
     "Shapiro": 55,
     "Garrity": 44,

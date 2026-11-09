@@ -1,7 +1,7 @@
 {
- "checked": "2026-11-09T22:03:54.094709+00:00",
+ "checked": "2026-11-09T22:05:08.661077+00:00",
  "source": "NBC News",
- "sourceUpdated": "4:29 PM ET",
+ "sourceUpdated": "5:04 PM ET",
  "title": null,
  "percentIn": "98.2%",
  "candidates": [
@@ -9,7 +9,7 @@
    "name": "Abdul El-Sayed",
    "last": "El-Sayed",
    "party": "dem",
-   "votes": 2520388,
+   "votes": 2520389,
    "pct": 52.5,
    "winner": true,
    "call": "P"

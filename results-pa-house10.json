@@ -1,7 +1,7 @@
 {
- "checked": "2026-11-09T20:20:25.327584+00:00",
+ "checked": "2026-11-09T20:21:43.888465+00:00",
  "source": "NBC News",
- "sourceUpdated": "3:17 PM ET",
+ "sourceUpdated": "3:21 PM ET",
  "title": null,
  "percentIn": "99%",
  "candidates": [
@@ -9,7 +9,7 @@
    "name": "Janelle Stelson",
    "last": "Stelson",
    "party": "dem",
-   "votes": 173671,
+   "votes": 173906,
    "pct": 55.1,
    "winner": true,
    "call": "P"
@@ -18,7 +18,7 @@
    "name": "Scott Perry",
    "last": "Perry",
    "party": "gop",
-   "votes": 141731,
+   "votes": 141802,
    "pct": 44.9,
    "winner": false,
    "call": ""
@@ -27,7 +27,7 @@
  "modes": [
   {
    "mode": "Election Day",
-   "votes": 243425,
+   "votes": 243458,
    "c": {
     "Stelson": 50,
     "Perry": 50
@@ -35,7 +35,7 @@
   },
   {
    "mode": "Early by Mail",
-   "votes": 71827,
+   "votes": 71836,
    "c": {
     "Stelson": 74,
     "Perry": 26

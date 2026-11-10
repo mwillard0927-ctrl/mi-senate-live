@@ -1,7 +1,7 @@
 {
- "checked": "2026-11-10T16:36:53.398231+00:00",
+ "checked": "2026-11-10T16:38:06.198469+00:00",
  "source": "NBC News",
- "sourceUpdated": "11:33 AM ET",
+ "sourceUpdated": "11:37 AM ET",
  "title": null,
  "percentIn": "98.2%",
  "candidates": [
@@ -9,7 +9,7 @@
    "name": "Abdul El-Sayed",
    "last": "El-Sayed",
    "party": "dem",
-   "votes": 2520394,
+   "votes": 2520396,
    "pct": 52.5,
    "winner": true,
    "call": "P"
@@ -18,7 +18,7 @@
    "name": "Mike Rogers",
    "last": "Rogers",
    "party": "gop",
-   "votes": 2180541,
+   "votes": 2180542,
    "pct": 45.5,
    "winner": false,
    "call": ""
@@ -63,7 +63,7 @@
  "modes": [
   {
    "mode": "Election Day",
-   "votes": 1552165,
+   "votes": 1552168,
    "c": {
     "Rogers": 54,
     "El-Sayed": 44,

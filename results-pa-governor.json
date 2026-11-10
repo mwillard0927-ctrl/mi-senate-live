@@ -1,7 +1,7 @@
 {
- "checked": "2026-11-10T17:10:04.076451+00:00",
+ "checked": "2026-11-10T17:11:21.085102+00:00",
  "source": "NBC News",
- "sourceUpdated": "12:09 PM ET",
+ "sourceUpdated": "12:11 PM ET",
  "title": null,
  "percentIn": "99%",
  "candidates": [
@@ -9,7 +9,7 @@
    "name": "Josh Shapiro",
    "last": "Shapiro",
    "party": "dem",
-   "votes": 3017324,
+   "votes": 3017369,
    "pct": 60.4,
    "winner": true,
    "call": "P"
@@ -18,7 +18,7 @@
    "name": "Stacy Garrity",
    "last": "Garrity",
    "party": "gop",
-   "votes": 1910215,
+   "votes": 1910221,
    "pct": 38.3,
    "winner": false,
    "call": ""
@@ -45,7 +45,7 @@
   },
   {
    "mode": "Early by Mail",
-   "votes": 1144696,
+   "votes": 1144739,
    "c": {
     "Shapiro": 80,
     "Garrity": 19,

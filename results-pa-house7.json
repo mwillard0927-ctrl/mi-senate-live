@@ -1,7 +1,7 @@
 {
- "checked": "2026-11-10T20:46:19.892479+00:00",
+ "checked": "2026-11-10T20:47:32.499283+00:00",
  "source": "NBC News",
- "sourceUpdated": "3:41 PM ET",
+ "sourceUpdated": "3:46 PM ET",
  "title": null,
  "percentIn": "99%",
  "candidates": [
@@ -9,7 +9,7 @@
    "name": "Bob Brooks",
    "last": "Brooks",
    "party": "dem",
-   "votes": 164543,
+   "votes": 164546,
    "pct": 56.1,
    "winner": true,
    "call": "P"
@@ -18,7 +18,7 @@
    "name": "Ryan Mackenzie",
    "last": "Mackenzie",
    "party": "gop",
-   "votes": 128738,
+   "votes": 128747,
    "pct": 43.9,
    "winner": false,
    "call": ""
@@ -27,7 +27,7 @@
  "modes": [
   {
    "mode": "Election Day",
-   "votes": 213891,
+   "votes": 213895,
    "c": {
     "Brooks": 50,
     "Mackenzie": 50
@@ -35,7 +35,7 @@
   },
   {
    "mode": "Early by Mail",
-   "votes": 79366,
+   "votes": 79374,
    "c": {
     "Brooks": 74,
     "Mackenzie": 26

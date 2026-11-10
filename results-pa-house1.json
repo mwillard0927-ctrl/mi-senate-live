@@ -1,7 +1,7 @@
 {
- "checked": "2026-11-10T13:26:20.541086+00:00",
+ "checked": "2026-11-10T16:16:00.802828+00:00",
  "source": "NBC News",
- "sourceUpdated": "Nov. 9, 5:03 PM ET",
+ "sourceUpdated": "11:11 AM ET",
  "title": null,
  "percentIn": "99%",
  "candidates": [
@@ -35,7 +35,7 @@
   },
   {
    "mode": "Early by Mail",
-   "votes": 107693,
+   "votes": 107708,
    "c": {
     "Harvie": 67,
     "Fitzpatrick": 33

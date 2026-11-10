@@ -1,7 +1,7 @@
 {
- "checked": "2026-11-10T13:26:20.541086+00:00",
+ "checked": "2026-11-10T16:16:00.802828+00:00",
  "source": "NBC News",
- "sourceUpdated": "Nov. 9, 5:31 PM ET",
+ "sourceUpdated": "11:15 AM ET",
  "title": null,
  "percentIn": "98.3%",
  "candidates": [
@@ -9,7 +9,7 @@
    "name": "Jocelyn Benson",
    "last": "Benson",
    "party": "dem",
-   "votes": 2613748,
+   "votes": 2613753,
    "pct": 54.6,
    "winner": true,
    "call": "P"
@@ -54,7 +54,7 @@
  "modes": [
   {
    "mode": "Election Day",
-   "votes": 1551471,
+   "votes": 1551476,
    "c": {
     "James": 53,
     "Benson": 45,

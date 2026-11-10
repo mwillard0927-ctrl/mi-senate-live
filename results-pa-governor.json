@@ -1,7 +1,7 @@
 {
- "checked": "2026-11-10T18:26:26.245057+00:00",
+ "checked": "2026-11-10T18:27:39.838067+00:00",
  "source": "NBC News",
- "sourceUpdated": "1:18 PM ET",
+ "sourceUpdated": "1:26 PM ET",
  "title": null,
  "percentIn": "99%",
  "candidates": [
@@ -45,7 +45,7 @@
   },
   {
    "mode": "Early by Mail",
-   "votes": 1144963,
+   "votes": 1144973,
    "c": {
     "Shapiro": 80,
     "Garrity": 19,

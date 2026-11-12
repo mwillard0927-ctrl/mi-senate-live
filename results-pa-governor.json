@@ -1,7 +1,7 @@
 {
- "checked": "2026-11-12T14:10:50.161633+00:00",
+ "checked": "2026-11-12T14:11:57.823219+00:00",
  "source": "NBC News",
- "sourceUpdated": "9:09 AM ET",
+ "sourceUpdated": "9:11 AM ET",
  "title": null,
  "percentIn": "99%",
  "candidates": [
@@ -9,7 +9,7 @@
    "name": "Josh Shapiro",
    "last": "Shapiro",
    "party": "dem",
-   "votes": 3022053,
+   "votes": 3022055,
    "pct": 60.5,
    "winner": true,
    "call": "P"
@@ -45,7 +45,7 @@
   },
   {
    "mode": "Early by Mail",
-   "votes": 1146562,
+   "votes": 1146564,
    "c": {
     "Shapiro": 80,
     "Garrity": 19,

@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-12T20:11:04.168546+00:00",
+ "checked": "2026-11-12T20:12:17.151458+00:00",
  "source": "NBC News",
  "sourceUpdated": "3:11 PM ET",
  "title": null,
@@ -27,7 +27,7 @@
  "modes": [
   {
    "mode": "Election Day",
-   "votes": 213895,
+   "votes": 213768,
    "c": {
     "Brooks": 50,
     "Mackenzie": 50
@@ -35,7 +35,7 @@
   },
   {
    "mode": "Early by Mail",
-   "votes": 79374,
+   "votes": 79707,
    "c": {
     "Brooks": 74,
     "Mackenzie": 26

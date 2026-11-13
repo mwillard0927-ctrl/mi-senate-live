@@ -1,7 +1,7 @@
 {
- "checked": "2026-11-13T19:56:11.110277+00:00",
+ "checked": "2026-11-13T19:57:22.828651+00:00",
  "source": "NBC News",
- "sourceUpdated": "2:51 PM ET",
+ "sourceUpdated": "2:57 PM ET",
  "title": null,
  "percentIn": "99%",
  "candidates": [
@@ -18,7 +18,7 @@
    "name": "Stacy Garrity",
    "last": "Garrity",
    "party": "gop",
-   "votes": 1913666,
+   "votes": 1913667,
    "pct": 38.2,
    "winner": false,
    "call": ""
@@ -36,7 +36,7 @@
  "modes": [
   {
    "mode": "Election Day",
-   "votes": 3840346,
+   "votes": 3840347,
    "c": {
     "Shapiro": 55,
     "Garrity": 44,

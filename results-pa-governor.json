@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-16T20:51:24.403401+00:00",
+ "checked": "2026-11-16T20:52:42.831844+00:00",
  "source": "NBC News",
  "sourceUpdated": "3:51 PM ET",
  "title": null,
@@ -36,7 +36,7 @@
  "modes": [
   {
    "mode": "Election Day",
-   "votes": 3839885,
+   "votes": 3839859,
    "c": {
     "Shapiro": 55,
     "Garrity": 44,
@@ -45,7 +45,7 @@
   },
   {
    "mode": "Early by Mail",
-   "votes": 1149320,
+   "votes": 1149341,
    "c": {
     "Shapiro": 80,
     "Garrity": 19,
@@ -54,7 +54,7 @@
   },
   {
    "mode": "Provisional",
-   "votes": 26758,
+   "votes": 27184,
    "c": {
     "Shapiro": 79,
     "Garrity": 19,

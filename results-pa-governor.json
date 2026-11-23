@@ -1,7 +1,7 @@
 {
- "checked": "2026-11-23T14:55:51.906257+00:00",
+ "checked": "2026-11-23T14:57:06.206667+00:00",
  "source": "NBC News",
- "sourceUpdated": "7:43 AM ET",
+ "sourceUpdated": "9:56 AM ET",
  "title": null,
  "percentIn": "99%",
  "candidates": [
@@ -18,7 +18,7 @@
    "name": "Stacy Garrity",
    "last": "Garrity",
    "party": "gop",
-   "votes": 1907346,
+   "votes": 1914346,
    "pct": 38.1,
    "winner": false,
    "call": ""
